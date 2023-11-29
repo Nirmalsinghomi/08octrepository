@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>que04</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .big{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding: 20px;
+            background-color: #f5f5f5;
+            min-height: 100vh;
+        }
+
+        .big div {
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .Box1{
+            background-color: red;
+        }
+
+        .Box2{
+            background-color: green;
+        }
+
+        .Box3{
+            background-color: blue;
+        }
+
+        .Box4{
+            background-color: chocolate;
+        }
+
+        @media screen and (min-width:768px) {
+            .big{
+                grid-template-columns: repeat(3,1fr);
+                grid-template-areas:
+                'Box1 Box1 Box1'
+                'Box2 Box3 Box3'
+                'Box4 Box4 Box4' ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="big">
+        <div class="Box1">Box1</div>
+        <div class="Box2">Box2</div>
+        <div class="Box3">Box3</div>
+        <div class="Box4">Box4</div>
+    </div>
+</body>
+</html>

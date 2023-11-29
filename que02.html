@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>que02</title>
+    <style>
+        .gallery{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        img{
+            width: 30%;
+            margin: 10px;
+        }
+        @media screen and ( max-width: 800px ) {
+            img{
+                width:45%
+            }
+        }
+
+        @media screen and ( max-width: 500px ) {
+            img{
+                width: 100%
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="https://fastly.picsum.photos/id/918/200/300.jpg?hmac=1gEvFp6O-XDh4848VnlwyOIrVy8s_aJNhYyTzxN9_JA" alt="Photo for gallery.">
+        <img src="https://fastly.picsum.photos/id/918/200/300.jpg?hmac=1gEvFp6O-XDh4848VnlwyOIrVy8s_aJNhYyTzxN9_JA" alt="Photo for gallery">
+        <img src="https://fastly.picsum.photos/id/918/200/300.jpg?hmac=1gEvFp6O-XDh4848VnlwyOIrVy8s_aJNhYyTzxN9_JA" alt="Photo for gallery">
+    </div>
+</body>
+</html>
